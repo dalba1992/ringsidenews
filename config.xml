@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ringsidenews.app" version="1.6.0">
+   <name>RSN</name>
+   <description><![CDATA[Download our app to get the latest WWE News and Wrestling news directly to your phone.]]></description>
+   <author href="http://www.ringsidenews.com" email="steve@ringsidenews.com">Steve Carrier</author>
+
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+
+    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="targetSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="19" />
+
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString"><string>160</string></gap:config-file>
+    
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.2.3" />
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.6" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" spec="1.3.1" />
+    <gap:plugin name="cordova-plugin-camera" source="npm" spec="2.3.1">
+        <param name="CAMERA_USAGE_DESCRIPTION" value="This app allows you to upload photos." />
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="This app allows you to upload photos." />
+    </gap:plugin>
+    <gap:plugin name="cordova-plugin-device" source="npm" spec="1.1.6" />
+    <gap:plugin name="cordova-plugin-dialogs" source="npm" spec="1.3.1" />
+    <gap:plugin name="cordova-plugin-file" source="npm" spec="4.3.1" />
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.1" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.1">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="" />
+    </gap:plugin>
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" spec="1.6.1" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" spec="1.3.1" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" spec="4.0.3" />
+    <gap:plugin name="cordova-plugin-actionsheet" source="npm" spec="2.3.3" />
+	<plugin name="cordova-plugin-google-analytics" source="npm" />
+    <gap:plugin source="git" spec="https://github.com/litehelpers/Cordova-sqlite-evcore-extbuild-free.git" />
+
+    <platform name="ios">
+        <gap:plugin name="ionic-plugin-keyboard" source="npm" spec="2.2.1" />
+    </platform>
+
+    <plugin name="phonegap-plugin-push" source="npm" spec="1.10.5"><param name="SENDER_ID" value="959804121767" /></plugin>
+    <gap:plugin source="git" spec="https://github.com/floatinghotpot/cordova-admob-pro" />
+    <!--FACEBOOK-DONOTREMOVE-->
+    <access origin="*"/>
+
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="7000" />
+    <preference name="keyboardDisplayRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="false" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+        <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+        <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+        <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+        <icon src="res/icon/android/icon-144-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+        <icon src="res/icon/android/icon-192-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+        <gap:splash src="res/screen/android/screen-ldpi-landscape.png" gap:platform="android" gap:qualifier="land-ldpi" />
+        <gap:splash src="res/screen/android/screen-mdpi-landscape.png" gap:platform="android" gap:qualifier="land-mdpi" />
+        <gap:splash src="res/screen/android/screen-hdpi-landscape.png" gap:platform="android" gap:qualifier="land-hdpi" />
+        <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:qualifier="land-xhdpi" />
+        <gap:splash src="res/screen/android/screen-xxhdpi-landscape.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
+        <gap:splash src="res/screen/android/screen-xxxhdpi-landscape.png" gap:platform="android" gap:qualifier="land-xxxhdpi" />
+        <gap:splash src="res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi" />
+        <gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi" />
+        <gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi" />
+        <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+        <gap:splash src="res/screen/android/screen-xxhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+        <gap:splash src="res/screen/android/screen-xxxhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xxxhdpi" />
+    </platform>
+
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <icon height="57" src="res/icon/ios/icon.png" width="57" gap:platform="ios" />
+        <icon height="114" src="res/icon/ios/icon@2x.png" width="114" gap:platform="ios" />
+        <icon height="40" src="res/icon/ios/icon-40.png" width="40" gap:platform="ios" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" gap:platform="ios" />
+        <icon height="120" src="res/icon/ios/icon-40@3x.png" width="120" gap:platform="ios" />
+        <icon height="50" src="res/icon/ios/icon-50.png" width="50" gap:platform="ios" />
+        <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" gap:platform="ios" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" gap:platform="ios" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" gap:platform="ios" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" gap:platform="ios" />
+        <icon height="72" src="res/icon/ios/icon-72.png" width="72" gap:platform="ios" />
+        <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" gap:platform="ios" />
+        <icon height="76" src="res/icon/ios/icon-76.png" width="76" gap:platform="ios" />
+        <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" gap:platform="ios" />
+        <icon height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" gap:platform="ios" />
+        <icon height="29" src="res/icon/ios/icon-small.png" width="29" gap:platform="ios" />
+        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" gap:platform="ios" />
+        <icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" gap:platform="ios" />
+        <icon height="1024" src="res/icon/ios/icon-1024.png" width="1024" gap:platform="ios" />
+        <gap:splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" gap:platform="ios" />
+        <gap:splash height="1334" src="res/screen/ios/Default-667h.png" width="750" gap:platform="ios" />
+        <gap:splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" gap:platform="ios" />
+        <gap:splash height="1242" src="res/screen/ios/Default-Landscape-736h.png" width="2208" gap:platform="ios" />
+        <gap:splash height="1536" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" gap:platform="ios" />
+        <gap:splash height="2048" src="res/screen/ios/Default-Landscape@~ipadpro.png" width="2732" gap:platform="ios" />
+        <gap:splash height="768" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" gap:platform="ios" />
+        <gap:splash height="2048" src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" gap:platform="ios" />
+        <gap:splash height="2732" src="res/screen/ios/Default-Portrait@~ipadpro.png" width="2048" gap:platform="ios" />
+        <gap:splash height="1024" src="res/screen/ios/Default-Portrait~ipad.png" width="768" gap:platform="ios" />
+        <gap:splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" gap:platform="ios" />
+        <gap:splash height="480" src="res/screen/ios/Default~iphone.png" width="320" gap:platform="ios" />
+        <!-- <gap:splash height="2732" src="res/screen/ios/Default@2x~universal~anyany.png" width="2732" gap:platform="ios" /> -->
+    </platform>
+
+    <icon src="icon.png" />
+    <gap:splash src="splash.png"/>
+    <content src="index.html" />
+    <access origin="*" subdomains="true" />
+    <allow-navigation href="*" /><!-- iOS render iframe content -->
+    <!-- https://github.com/phonegap/build/issues/508 -->
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <access origin="mailto:*" launch-external="yes" />
+    <access origin="tel:*" launch-external="yes" />
+
+</widget>
