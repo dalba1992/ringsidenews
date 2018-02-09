@@ -1,15 +1,15 @@
 webpackJsonp([6],{
 
-/***/ 329:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostListModule", function() { return PostListModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__post_list__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__post_list__ = __webpack_require__(395);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -23,40 +23,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var PostListModule = (function () {
     function PostListModule() {
     }
+    PostListModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__post_list__["a" /* PostList */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__post_list__["a" /* PostList */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateModule */].forChild()
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_3__post_list__["a" /* PostList */]
+            ]
+        })
+    ], PostListModule);
     return PostListModule;
 }());
-PostListModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-        declarations: [
-            __WEBPACK_IMPORTED_MODULE_3__post_list__["a" /* PostList */],
-        ],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__post_list__["a" /* PostList */]),
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateModule */].forChild()
-        ],
-        exports: [
-            __WEBPACK_IMPORTED_MODULE_3__post_list__["a" /* PostList */]
-        ]
-    })
-], PostListModule);
 
 //# sourceMappingURL=post-list.module.js.map
 
 /***/ }),
 
-/***/ 670:
+/***/ 395:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostList; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_posts_posts__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_posts_posts__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_globalvars_globalvars__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_header_logo_header_logo__ = __webpack_require__(239);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_device__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_header_logo_header_logo__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_device__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(122);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -347,28 +347,28 @@ var PostList = (function () {
             //console.log(e)
         });
     };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["b" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["b" /* Content */])
+    ], PostList.prototype, "content", void 0);
+    PostList = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({template:/*ion-inline-start:"/Users/scottopolis/Graphic Art/git tower/ap3/src/pages/post-list/post-list.html"*/'<ion-header>\n  \n  <ion-navbar no-border-bottom>\n\n    <ion-buttons start>\n      <button *ngIf="rtlBack" (click)="backRtlTransition()" ion-button class="custom-back-button">\n          <ion-icon name="arrow-back"></ion-icon>\n          {{\'Back\' | translate }}\n      </button>\n\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n\n    </ion-buttons>\n\n    <img class="header-logo" *ngIf="show_header_logo" [src]="header_logo_url" />\n\n    <ion-title *ngIf="!show_header_logo">{{title | translate}}</ion-title>\n\n    <ion-buttons end>\n    <button ion-button class="search-button-header" (click)="toggleSearchBar()">\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    </ion-navbar>\n\n    <ion-toolbar *ngIf="showSearch">\n      <ion-searchbar placeholder="{{\'Search\' | translate }}" debounce="1000" (ionInput)="search($event)" (ionClear)="clearSearch()"></ion-searchbar>\n    </ion-toolbar>\n\n    <ion-toolbar *ngIf="doFavorites" id="favorites-toolbar">\n\n      <button ion-button clear (click)="showAll()">\n        {{ \'All\' | translate }}\n      </button>\n\n      <button ion-button clear (click)="showFavorites()">\n        {{ \'Favorites\' | translate }}\n      </button>\n\n    </ion-toolbar>\n\n</ion-header>\n\n<ion-content [ngClass]="customClasses">\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-slides *ngIf="showSlider" pager>\n\n    <ion-slide *ngFor="let slide of slides" [ngStyle]="{\'background-image\': \'url(\' + (slide.featured_image_urls ? slide.featured_image_urls.large : null) + \')\'}" (click)="itemTapped($event, slide)">\n\n      <h3 class="slide-title" *ngIf="slide.title && slide.title.rendered" [innerHTML]="slide.title.rendered"></h3>\n\n      <div *ngIf="slide.appp && slide.appp.post_list && slide.appp.post_list.slide_content" [innerHTML]="slide.appp.post_list.slide_content"></div>\n\n    </ion-slide>\n\n  </ion-slides>\n  \n  <ion-list *ngIf="defaultlist">\n\n    <ion-item-sliding *ngFor="let item of items" #slidingItem>\n      <button ion-item (click)="itemTapped($event, item)">\n\n      <ion-avatar item-left *ngIf="item.featured_image_urls">\n        <img *ngIf="item.featured_image_urls && item.featured_image_urls.thumbnail" src="{{item.featured_image_urls.thumbnail}}">\n        <img *ngIf="!item.featured_image_urls || !item.featured_image_urls.thumbnail" src="assets/default.png">\n      </ion-avatar>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.above_title" [innerHTML]="item.appp.post_list.above_title"></div>\n\n      <h2 *ngIf="item.title && item.title.rendered" [innerHTML]="item.title.rendered"></h2>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_title" [innerHTML]="item.appp.post_list.below_title"></div>\n\n      <p *ngIf="item.excerpt && item.excerpt.rendered" [innerHTML]="item.excerpt.rendered"></p>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_content" [innerHTML]="item.appp.post_list.below_content"></div>\n\n      </button>\n\n      <ion-item-options side="right" *ngIf="doFavorites">\n        <button ion-button color="primary" (click)="addFav(slidingItem, item)">\n          <ion-icon name="star-outline"></ion-icon>\n          {{ \'Favorite\' | translate }}\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n\n  </ion-list>\n\n  <ion-list *ngIf="cardlist">\n\n    <ion-card (click)="itemTapped($event, item)" *ngFor="let item of items">\n      \n      <div class="card-featured-wrap" *ngIf="item.featured_image_urls && item.featured_image_urls.large">\n        <img src="{{item.featured_image_urls.large}}">\n      </div>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.above_title" [innerHTML]="item.appp.post_list.above_title"></div>\n\n      <ion-card-content>\n\n        <ion-card-title *ngIf="item.title && item.title.rendered">\n          <h2 [innerHTML]="item.title.rendered"></h2>\n        </ion-card-title>\n\n        <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_title" [innerHTML]="item.appp.post_list.below_title"></div>\n\n        <p *ngIf="item.excerpt && item.excerpt.rendered" [innerHTML]="item.excerpt.rendered"></p>\n\n      </ion-card-content>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_content" [innerHTML]="item.appp.post_list.below_content"></div>\n\n    </ion-card>\n\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n   <ion-infinite-scroll-content></ion-infinite-scroll-content>\n </ion-infinite-scroll>\n\n</ion-content>\n'/*ion-inline-end:"/Users/scottopolis/Graphic Art/git tower/ap3/src/pages/post-list/post-list.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_posts_posts__["a" /* Posts */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_globalvars_globalvars__["a" /* GlobalVars */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["o" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["n" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_header_logo_header_logo__["a" /* HeaderLogo */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_device__["a" /* Device */]])
+    ], PostList);
     return PostList;
 }());
-__decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["b" /* Content */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["b" /* Content */])
-], PostList.prototype, "content", void 0);
-PostList = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({template:/*ion-inline-start:"/Users/matt/projects/appp/ap3/src/pages/post-list/post-list.html"*/'<ion-header>\n  \n  <ion-navbar no-border-bottom>\n\n    <ion-buttons start>\n      <button *ngIf="rtlBack" (click)="backRtlTransition()" ion-button class="custom-back-button">\n          <ion-icon name="arrow-back"></ion-icon>\n          {{\'Back\' | translate }}\n      </button>\n\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n\n    </ion-buttons>\n\n    <img class="header-logo" *ngIf="show_header_logo" [src]="header_logo_url" />\n\n    <ion-title *ngIf="!show_header_logo">{{title | translate}}</ion-title>\n\n    <ion-buttons end>\n    <button ion-button class="search-button-header" (click)="toggleSearchBar()">\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    </ion-navbar>\n\n    <ion-toolbar *ngIf="showSearch">\n      <ion-searchbar placeholder="{{\'Search\' | translate }}" debounce="1000" (ionInput)="search($event)" (ionClear)="clearSearch()"></ion-searchbar>\n    </ion-toolbar>\n\n    <ion-toolbar *ngIf="doFavorites" id="favorites-toolbar">\n\n      <button ion-button clear (click)="showAll()">\n        {{ \'All\' | translate }}\n      </button>\n\n      <button ion-button clear (click)="showFavorites()">\n        {{ \'Favorites\' | translate }}\n      </button>\n\n    </ion-toolbar>\n\n</ion-header>\n\n<ion-content [ngClass]="customClasses">\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-slides *ngIf="showSlider" pager>\n\n    <ion-slide *ngFor="let slide of slides" [ngStyle]="{\'background-image\': \'url(\' + (slide.featured_image_urls ? slide.featured_image_urls.large : null) + \')\'}" (click)="itemTapped($event, slide)">\n\n      <h3 class="slide-title" *ngIf="slide.title && slide.title.rendered" [innerHTML]="slide.title.rendered"></h3>\n\n      <div *ngIf="slide.appp && slide.appp.post_list && slide.appp.post_list.slide_content" [innerHTML]="slide.appp.post_list.slide_content"></div>\n\n    </ion-slide>\n\n  </ion-slides>\n  \n  <ion-list *ngIf="defaultlist">\n\n    <ion-item-sliding *ngFor="let item of items" #slidingItem>\n      <button ion-item (click)="itemTapped($event, item)">\n\n      <ion-avatar item-left *ngIf="item.featured_image_urls">\n        <img *ngIf="item.featured_image_urls && item.featured_image_urls.thumbnail" src="{{item.featured_image_urls.thumbnail}}">\n        <img *ngIf="!item.featured_image_urls || !item.featured_image_urls.thumbnail" src="assets/default.png">\n      </ion-avatar>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.above_title" [innerHTML]="item.appp.post_list.above_title"></div>\n\n      <h2 *ngIf="item.title && item.title.rendered" [innerHTML]="item.title.rendered"></h2>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_title" [innerHTML]="item.appp.post_list.below_title"></div>\n\n      <p *ngIf="item.excerpt && item.excerpt.rendered" [innerHTML]="item.excerpt.rendered"></p>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_content" [innerHTML]="item.appp.post_list.below_content"></div>\n\n      </button>\n\n      <ion-item-options side="right" *ngIf="doFavorites">\n        <button ion-button color="primary" (click)="addFav(slidingItem, item)">\n          <ion-icon name="star-outline"></ion-icon>\n          {{ \'Favorite\' | translate }}\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n\n  </ion-list>\n\n  <ion-list *ngIf="cardlist">\n\n    <ion-card (click)="itemTapped($event, item)" *ngFor="let item of items">\n      \n      <div class="card-featured-wrap" *ngIf="item.featured_image_urls && item.featured_image_urls.large">\n        <img src="{{item.featured_image_urls.large}}">\n      </div>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.above_title" [innerHTML]="item.appp.post_list.above_title"></div>\n\n      <ion-card-content>\n\n        <ion-card-title *ngIf="item.title && item.title.rendered">\n          <h2 [innerHTML]="item.title.rendered"></h2>\n        </ion-card-title>\n\n        <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_title" [innerHTML]="item.appp.post_list.below_title"></div>\n\n        <p *ngIf="item.excerpt && item.excerpt.rendered" [innerHTML]="item.excerpt.rendered"></p>\n\n      </ion-card-content>\n\n      <div *ngIf="item.appp && item.appp.post_list && item.appp.post_list.below_content" [innerHTML]="item.appp.post_list.below_content"></div>\n\n    </ion-card>\n\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n   <ion-infinite-scroll-content></ion-infinite-scroll-content>\n </ion-infinite-scroll>\n\n</ion-content>\n'/*ion-inline-end:"/Users/matt/projects/appp/ap3/src/pages/post-list/post-list.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["l" /* NavController */],
-        __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["m" /* NavParams */],
-        __WEBPACK_IMPORTED_MODULE_2__providers_posts_posts__["a" /* Posts */],
-        __WEBPACK_IMPORTED_MODULE_3__providers_globalvars_globalvars__["a" /* GlobalVars */],
-        __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],
-        __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */],
-        __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["o" /* ToastController */],
-        __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["p" /* ViewController */],
-        __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["n" /* Platform */],
-        __WEBPACK_IMPORTED_MODULE_4__providers_header_logo_header_logo__["a" /* HeaderLogo */],
-        __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */],
-        __WEBPACK_IMPORTED_MODULE_6__ionic_native_device__["a" /* Device */]])
-], PostList);
 
 //# sourceMappingURL=post-list.js.map
 

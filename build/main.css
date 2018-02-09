@@ -15909,6 +15909,10 @@ textarea:-ms-input-placeholder {
   padding-left: 2px;
 }
 
+textarea::-ms-input-placeholder {
+  padding-left: 2px;
+}
+
 textarea::placeholder {
   padding-left: 2px;
 }
@@ -24898,8 +24902,8 @@ input.text-input:-webkit-autofill {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
   -webkit-flex-direction: inherit;
   -ms-flex-direction: inherit;
   flex-direction: inherit;
@@ -24924,8 +24928,8 @@ input.text-input:-webkit-autofill {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
   -webkit-flex-direction: inherit;
   -ms-flex-direction: inherit;
   flex-direction: inherit;
@@ -39163,6 +39167,29 @@ p.description {
 
 .custom-page .homepage-demo ion-icon {
   color: #387ef5;
+}
+
+.iphoneX-portrait .toolbar.statusbar-padding:first-child, .iphoneX-portrait .menu-inner > .toolbar.statusbar-padding:first-child {
+  padding-top: 44px !important;
+}
+
+.iphoneX-portrait .menu-inner .toolbar.statusbar-padding:first-child {
+  min-height: 80px !important;
+}
+
+.iphoneX-portrait .toolbar.statusbar-padding:first-child ion-title {
+  padding-top: 44px !important;
+  height: 80px !important;
+}
+
+.iphoneX-portrait ion-content.statusbar-padding .fixed-content, .iphoneX-portrait ion-content.statusbar-padding .scroll-content {
+  margin-top: 80px !important;
+}
+
+.iphoneX-landscape .toolbar.statusbar-padding:first-child ion-title, .iphoneX-landscape .toolbar.statusbar-padding:first-child {
+  padding-top: 0 !important;
+  height: 44px !important;
+  min-height: 44px !important;
 }
 
 .content img {
